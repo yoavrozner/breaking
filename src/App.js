@@ -1,10 +1,7 @@
 import './App.css';
 import Graph from './lineGraph.jsx';
-<<<<<<< HEAD
-=======
 import Side from './components/Sidenav.jsx';
 // import Graph from './line.jsx';
->>>>>>> origin/yoav
 import Navbar from 'react-bootstrap/Navbar'
 import Container from 'react-bootstrap/Container'
 
