@@ -76,6 +76,15 @@
 }
 
 .contentContainer{
-  margin-right: 180px;
-  margin-left: 20px;
+  margin: 20px;
+}
+
+.navbar{
+  background-color: #00B4D8;
+}
+
+.headline{
+  font-size: 40px;
+  font-weight: bold;
+  color: #fafafa;
 }

@@ -1,29 +1,27 @@
 import './App.css';
 import Graph from './lineGraph.jsx';
 import Side from './components/Sidenav.jsx';
-// import Graph from './line.jsx';
 import Navbar from 'react-bootstrap/Navbar'
 import Container from 'react-bootstrap/Container'
 
 function App() {
   return (
     <div className="App">
-      <Navbar bg="primary">
+      <Navbar className='navbar'>
         <Container>
           <Navbar.Brand href="#home">
-            <img
+            <h1 className='headline'>שובר שגרה</h1>
+            {/* <img
               src={require('./acdc_logo.webp')}
               width="50"
               height="40"
               className="d-inline-block align-top"
               alt="React Bootstrap logo"
-            />
+            /> */}
           </Navbar.Brand>
         </Container>
       </Navbar>
-      <p>שלום לכולם</p>
       <Side className="side" />
-
       <div className='contentContainer'>
         <div className='card'>
           <div className='container'>
