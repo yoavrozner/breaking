@@ -29,4 +29,4 @@ const Side = () => {
         </div>
     );
 };
-export default Side;
+export default Side
