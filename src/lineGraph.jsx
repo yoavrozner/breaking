@@ -1,9 +1,8 @@
 import React from 'react';
 import { ResponsiveLine } from 'nivo';
-import data from './data.json';
+// import data from './dataOne.json';
 
-const Graph = () => {
-    console.log(data)
+const Graph = ({data}) => {
     return (
         <ResponsiveLine
             data={data}
@@ -70,7 +69,7 @@ const Graph = () => {
                 }
             ]}
             options={{
-                onClick: function (e) {console.log(e)}
+                onClick: function (e) { console.log(e) }
             }}
         />
     )

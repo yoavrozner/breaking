@@ -1,5 +1,6 @@
 import React from "react";
 import "./sidenav.css";
+// import { Link } from "react-router-dom";
 
 const Side = () => {
     function menuOnClick() {
@@ -22,17 +23,17 @@ const Side = () => {
                                 <div className="alertCircle">
                                     <p className="alertSite">1</p>
                                 </div>
-                                <a href="#">אתר 1</a>
+                                <a href="/">אתר 1</a>
                             </div>
                         </li>
-                        <li><a href="#">אתר 2</a></li>
-                        <li><a href="#">אתר 3</a></li>
+                        <li><a href="site2">אתר 2</a></li>
+                        <li><a href="site3">אתר 3</a></li>
                         <li>
                             <div className="sites">
                                 <div className="alertCircle">
                                     <p className="alertSite">3</p>
                                 </div>
-                                <a href="#">אתר 4</a>
+                                <a href="site4">אתר 4</a>
                             </div>
                         </li>
                     </ul>

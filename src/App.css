@@ -77,8 +77,10 @@
 }
 
 .imageSeal{
-  height: 100%;
-  padding-bottom: 10px;
+  height: 150px;
+  width: 150px;
+  padding-bottom: 40px;
+
 }
 
 .side{

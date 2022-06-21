@@ -3,10 +3,9 @@ import Graph from './lineGraph.jsx';
 import Side from './components/Sidenav.jsx';
 import Navbar from 'react-bootstrap/Navbar'
 import Container from 'react-bootstrap/Container';
-import dataOne from './dataOne.json'
+import dataFour from './dataFour.json';
 
 function App() {
-
   return (
     <div className="App">
       <Side className="side" />
@@ -35,7 +34,7 @@ function App() {
           </div>
 
           <div className='graphWrapper'>
-            <Graph data={dataOne} />
+            <Graph data={dataFour} />
             <div className='desc'>
               <img src={require('./seal.png')} alt="" className='imageSeal' />
               <h4>:תיאור האתר</h4>
