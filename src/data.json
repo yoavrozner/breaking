@@ -5,51 +5,63 @@
       "data": [
         {
           "x": "plane",
-          "y": 285
+          "y": 285,
+          "sensor": "test"
         },
         {
           "x": "helicopter",
-          "y": 112
+          "y": 112,
+          "sensor": "test"
         },
         {
           "x": "boat",
-          "y": 111
+          "y": 111,
+          "sensor": "test"
         },
         {
           "x": "train",
-          "y": 192
+          "y": 192,
+          "sensor": "test"
         },
         {
           "x": "subway",
-          "y": 16
+          "y": 16,
+          "sensor": "test"
         },
         {
           "x": "bus",
-          "y": 33
+          "y": 33,
+          "sensor": "test"
         },
         {
           "x": "car",
-          "y": 173
+          "y": 173,
+          "sensor": "test"
         },
         {
           "x": "moto",
-          "y": 167
+          "y": 167,
+          "sensor": "test"
         },
         {
           "x": "bicycle",
-          "y": 181
+          "y": 181,
+          "sensor": "test"
         },
         {
           "x": "horse",
-          "y": 261
+          "y": 261,
+          "sensor": "test"
         },
         {
           "x": "skateboard",
-          "y": 22
+          "y": 22,
+          "sensor": "test"
         },
         {
           "x": "others",
-          "y": 19
+          "y": 19,
+          "sensor": "test"
         }
       ]
     }
