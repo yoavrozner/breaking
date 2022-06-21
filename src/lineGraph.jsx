@@ -1,13 +1,12 @@
 import React from 'react';
 import { ResponsiveLine } from 'nivo';
-import data from "./data.json"
-
+import data from "./data/my_fabricated_data_3.json"
 
 const color_anomaly_data = (data) => {
-    const anomalies = []
-    const regulars = []
+    let anomalies = []
+    let regulars = []
     data[0].data.forEach((point) => {
-        if (point.is_annomaly > 0.5) {
+        if (point.is_anomaly > 0.5) {
             anomalies.push(point)
             regulars.push({...point, 'y': null})
             }
@@ -44,8 +43,6 @@ const Graph = () => {
                 type: 'linear',
                 stacked: false
             }}
-            enableSlices={false}
-            crosshairType="cross"
             colors={['lime', 'red', 'lime']}
             useMesh={true}
         />

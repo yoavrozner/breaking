@@ -1,6 +1,6 @@
 [
   {
-      "id": "fake corp. A",
+      "id": "gilad",
       "data": [
           { "x": "2018-01-01", "y": 7, "is_annomaly": 0.3 },
           { "x": "2018-01-02", "y": 5, "is_annomaly": 0.3 },

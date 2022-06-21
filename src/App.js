@@ -33,7 +33,7 @@ function App() {
           </div>
 
           <div className='graphWrapper'>
-            <Graph />
+            <Graph/>
             <div className='desc'>
               <img src={require('./seal.png')} alt="" className='imageSeal' />
               <h4>:תיאור האתר</h4>
