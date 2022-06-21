@@ -7,13 +7,13 @@ import Container from 'react-bootstrap/Container'
 function App() {
   return (
     <div className="App">
-      <Navbar bg="dark">
+      <Navbar bg="primary">
         <Container>
           <Navbar.Brand href="#home">
             <img
-              src="./seal.png"
-              width="30"
-              height="30"
+              src={require('./acdc_logo.webp')}
+              width="50"
+              height="40"
               className="d-inline-block align-top"
               alt="React Bootstrap logo"
             />
@@ -24,13 +24,13 @@ function App() {
 
       <div className='card'>
         <div className='container'>
-          <h4><b>ראש אמן</b></h4>
+          <h4><b>חתמצ מספר 1</b></h4>
         </div>
 
         <div className='graphWrapper'>
           <Graph />
           <div className='desc'>
-            <p>ברוך הבא</p>
+            <p>תיאור אתר מספר 1</p>
             <img src={require('./seal.png')} alt="" className='imageSeal' />
           </div>
         </div>
