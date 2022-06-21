@@ -1,68 +1,15 @@
 [
-    {
-      "id": "norway",
-      "color": "hsl(244, 70%, 50%)",
+  {
+      "id": "fake corp. A",
       "data": [
-        {
-          "x": "plane",
-          "y": 285,
-          "sensor": "test"
-        },
-        {
-          "x": "helicopter",
-          "y": 112,
-          "sensor": "test"
-        },
-        {
-          "x": "boat",
-          "y": 111,
-          "sensor": "test"
-        },
-        {
-          "x": "train",
-          "y": 192,
-          "sensor": "test"
-        },
-        {
-          "x": "subway",
-          "y": 16,
-          "sensor": "test"
-        },
-        {
-          "x": "bus",
-          "y": 33,
-          "sensor": "test"
-        },
-        {
-          "x": "car",
-          "y": 173,
-          "sensor": "test"
-        },
-        {
-          "x": "moto",
-          "y": 167,
-          "sensor": "test"
-        },
-        {
-          "x": "bicycle",
-          "y": 181,
-          "sensor": "test"
-        },
-        {
-          "x": "horse",
-          "y": 261,
-          "sensor": "test"
-        },
-        {
-          "x": "skateboard",
-          "y": 22,
-          "sensor": "test"
-        },
-        {
-          "x": "others",
-          "y": 19,
-          "sensor": "test"
-        }
+          { "x": "2018-01-01", "y": 7, "is_annomaly": 0.3 },
+          { "x": "2018-01-02", "y": 5, "is_annomaly": 0.3 },
+          { "x": "2018-01-03", "y": 11, "is_annomaly": 0.3 },
+          { "x": "2018-01-04", "y": 13, "is_annomaly": 0.7 },
+          { "x": "2018-01-05", "y": 12, "is_annomaly": 0.7 },
+          { "x": "2018-01-06", "y": 16, "is_annomaly": 0.7 },
+          { "x": "2018-01-07", "y": 9, "is_annomaly": 0.3 },
+          { "x": "2018-01-08", "y": 13, "is_annomaly": 0.7 }
       ]
-    }
-  ]
+  }
+]

@@ -1,36 +1,55 @@
 import React from 'react';
 import { ResponsiveLine } from 'nivo';
-
-const data=[
-    {
-        id: 'fake corp. A',
-        data: [
-            { x: '2018-01-01', y: 7 },
-            { x: '2018-01-02', y: 5 },
-            { x: '2018-01-03', y: 11 },
-            { x: '2018-01-04', y: 9 },
-            { x: '2018-01-05', y: 12 },
-            { x: '2018-01-06', y: 16 },
-            { x: '2018-01-07', y: 13 },
-            { x: '2018-01-08', y: 13 },
-        ],
-    },
-   
-]
+import data from "./data.json"
 
 
+// const ShoverTooltip = (datapoint) => {
+//     console.log(datapoint)
+//     return <div>TEST</div>
+// }
 
-const ShoverTooltip = (datapoint) => {
-    console.log(datapoint)
-    return <div>TEST</div>
+const split_anomaly_data = (data) => {
+    const anomalies = []
+    const regulars = []
+    data[0].data.forEach((point) => {
+        if (point.is_annomaly > 0.5) {
+            anomalies.push(point)
+            regulars.push({...point, 'y': null})
+        }
+        else {
+            anomalies.push({...point, 'y': null})
+            regulars.push(point)
+        }
+    })
+    return [
+        {
+            "id": data[0].id + " anomalies",
+            "data": anomalies
+        },
+        {
+            "id": data[0].id + " regulars",
+            "data": regulars
+        }
+    ]
 }
 
+// const color_anomalies = (data) => {
+//     return data[0].data.forEach((point) => {
+//         if (point.is_annomaly > 0.5) {
+//             point['color'] = 'red'
+//         }
+//         else {
+//             point['color'] = 'green'
+//         }
+//     }
+//     )
+// }
+
 const Graph = () => {
-    console.log(data)
     return (
         <ResponsiveLine
-            enableSlices={false}
-            data={data}
+            data={split_anomaly_data(data)}
+            // data={color_anomalies}
             margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
             xScale={{
                 type: 'time',
@@ -40,17 +59,24 @@ const Graph = () => {
             xFormat="time:%Y-%m-%d"
             yScale={{
                 type: 'linear',
+                stacked: false
             }}
-
-            enablePointLabel={true}
+            enableSlices={false}
+            crosshairType="cross"
+            curve={'monotoneX'}
+            colors={['red', 'green']}
+            // colors={(point) => {
+            //     console.log(point)
+            //     // data.forEach(({}))
+            //     let is_anomaly = point.is_annomaly > 0.5
+            //     console.log(is_anomaly)
+            //     return is_anomaly ? 'red' : 'green'
+            // }
+            // }
+            // colorBy={'color'}
             pointSize={16}
             pointBorderWidth={1}
-            pointBorderColor={{
-                from: 'color',
-                modifiers: [['darker', 0.3]],
-            }}
             useMesh={true}
-            enableSlices={false}
         />
     )
 }
