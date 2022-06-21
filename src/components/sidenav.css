@@ -92,3 +92,22 @@
   height: 460px;
   transform: translate(-60%, -30%);
 }
+
+.sites{
+  display: flex;
+  justify-content: space-between;
+  margin-left: -50px;
+}
+
+.alertSite{
+  color: red;
+  padding: 0;
+  margin: 0;
+}
+.alertCircle{
+  border-style: solid;
+  border-color: red;
+  border-radius: 50px;
+  padding-left: 5px;
+  padding-right: 5px;
+}

@@ -17,16 +17,30 @@ const Side = () => {
                 </div>
                 <nav class="nav" id="nav">
                     <ul>
-                        <li><a href="#">אתר 1</a></li>
+                        <li>
+                            <div className="sites">
+                                <div className="alertCircle">
+                                    <p className="alertSite">1</p>
+                                </div>
+                                <a href="#">אתר 1</a>
+                            </div>
+                        </li>
                         <li><a href="#">אתר 2</a></li>
                         <li><a href="#">אתר 3</a></li>
-                        <li><a href="#">אתר 4</a></li>
+                        <li>
+                            <div className="sites">
+                                <div className="alertCircle">
+                                    <p className="alertSite">3</p>
+                                </div>
+                                <a href="#">אתר 4</a>
+                            </div>
+                        </li>
                     </ul>
                 </nav>
             </div>
 
             <div class="menu-bg" id="menu-bg"></div>
-        </div>
+        </div >
     );
 };
 export default Side
