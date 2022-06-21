@@ -69,5 +69,13 @@
 
 .imageSeal{
   height: 100%;
-  /* width: 100%; */
+}
+
+.side{
+  width: "200px";
+}
+
+.contentContainer{
+  margin-right: 180px;
+  margin-left: 20px;
 }
