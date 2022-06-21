@@ -12,7 +12,7 @@ function App() {
       <div className='nav-container'>
         <Navbar className='navbar'>
           <Container>
-            <Navbar.Brand href="#home">
+            <Navbar.Brand>
               <input type="text" placeholder="חיפוש אתרים" className="search" />
               <h1 className='headline'>שובר שגרה</h1>
 
@@ -30,15 +30,15 @@ function App() {
       <div className='contentContainer'>
         <div className='card'>
           <div className='container'>
-            <h2><b> חניון בהד 15</b></h2>
+            <h2><b>איצטדיון טדי</b></h2>
           </div>
 
           <div className='graphWrapper'>
             <Graph data={dataFour} />
             <div className='desc'>
-              <img src={require('./seal.png')} alt="" className='imageSeal' />
+              <img src={require('./home3.png')} alt="" className='imageSeal' />
               <h4>:תיאור האתר</h4>
-              <p>lorLorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+              <p>אריאל רוצה לדעת מתי מתקיימים משחקים באיצטדיון</p>
             </div>
           </div>
         </div>

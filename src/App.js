@@ -13,8 +13,8 @@ function App() {
       <div className='nav-container'>
         <Navbar className='navbar'>
           <Container>
-            <Navbar.Brand href="#home">
-              <input type="text" placeholder="חיפוש אתרים" className="search" />
+            <Navbar.Brand>
+              <input type="text" placeholder="חיפוש" className="search" />
               <h1 className='headline'>שובר שגרה</h1>
 
               {/* <img
@@ -37,9 +37,9 @@ function App() {
           <div className='graphWrapper'>
             <Graph data={dataOne} />
             <div className='desc'>
-              <img src={require('./seal.png')} alt="" className='imageSeal' />
+              <img src={require('./home4.png')} alt="" className='imageSeal' />
               <h4>:תיאור האתר</h4>
-              <p>lorLorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+              <p>מעקב אחרי תפוסת חניון בהד 15 כדי לדעת מתי יש טקס קמנים</p>
             </div>
           </div>
         </div>
