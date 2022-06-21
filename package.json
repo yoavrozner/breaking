@@ -5,6 +5,8 @@
   "dependencies": {
     "@mui/icons-material": "^5.8.4",
     "@mui/material": "^5.8.4",
+    "@nivo/generators": "^0.79.0",
+    "@nivo/tooltip": "^0.79.0",
     "@progress/kendo-react-charts": "^5.4.0",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",

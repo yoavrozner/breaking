@@ -1,6 +1,5 @@
 import './App.css';
 import Graph from './lineGraph.jsx';
-// import Graph from './line.jsx';
 import Navbar from 'react-bootstrap/Navbar'
 import Container from 'react-bootstrap/Container'
 
