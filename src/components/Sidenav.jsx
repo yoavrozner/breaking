@@ -19,14 +19,19 @@ const Side = () => {
                 <nav class="nav" id="nav">
                     <ul>
                         <li>
-                            <div className="sites">
-                                <div className="alertCircle">
+                            {/* <div className="sites"> */}
+                                {/* <div className="alertCircle">
                                     <p className="alertSite">1</p>
-                                </div>
+                                </div> */}
                                 <a href="/">אתר 1</a>
-                            </div>
+                            {/* </div> */}
                         </li>
-                        <li><a href="site2">אתר 2</a></li>
+                        <li> <div className="sites">
+                            <div className="alertCircle">
+                                <p className="alertSite">5</p>
+                            </div>
+                            <a href="site2">אתר 2</a>
+                        </div></li>
                         <li><a href="site3">אתר 3</a></li>
                         <li>
                             <div className="sites">

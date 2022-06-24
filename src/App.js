@@ -3,7 +3,7 @@ import Graph from './lineGraph.jsx';
 import Side from './components/Sidenav.jsx';
 import Navbar from 'react-bootstrap/Navbar'
 import Container from 'react-bootstrap/Container';
-import dataOne from './dataOne.json'
+import dataOne from './data/dataOne.json'
 
 function App() {
 
@@ -31,7 +31,7 @@ function App() {
       <div className='contentContainer'>
         <div className='card'>
           <div className='container'>
-            <h2><b> חניון בהד 15</b></h2>
+            <h2><b> חניון בהד 15 - מכוניות</b></h2>
           </div>
 
           <div className='graphWrapper'>

@@ -2,46 +2,58 @@ import React from 'react';
 import { ResponsiveLine } from 'nivo';
 // import data from './dataOne.json';
 
-const Graph = ({data}) => {
+
+const color_anomaly_data = (data) => {
+    let anomalies = []
+    let regulars = []
+    data[0].data.forEach((point) => {
+        if (point.is_anomaly > 0.5) {
+            anomalies.push(point)
+            regulars.push({ ...point, 'y': null })
+        }
+        else {
+            anomalies.push({ ...point, 'y': null })
+            regulars.push(point)
+        }
+    })
+    return [
+        data[0],
+        {
+            "id": data[0].id + " anomalies",
+            "data": anomalies
+        },
+        {
+            "id": data[0].id + " regulars",
+            "data": regulars
+        }
+    ]
+}
+
+const Graph = ({ data }) => {
     return (
         <ResponsiveLine
-            data={data}
+            data={color_anomaly_data(data)}
             margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
-            xScale={{ type: 'point' }}
+            // xScale={{
+            //     type: 'time',
+            //     format: '%m',
+            //     precision: 'day',
+            // }}
+            // xFormat="%m"
             yScale={{
                 type: 'linear',
-                min: 'auto',
-                max: 'auto',
-                stacked: true,
-                reverse: false
+                stacked: false
             }}
-            yFormat=" >-.2f"
-            axisTop={null}
-            axisRight={null}
-            axisBottom={{
-                orient: 'bottom',
-                tickSize: 5,
-                tickPadding: 5,
-                tickRotation: 0,
-                legend: 'תאריך',
-                legendOffset: 36,
-                legendPosition: 'center'
-            }}
-            axisLeft={{
-                orient: 'left',
-                tickSize: 5,
-                tickPadding: 5,
-                tickRotation: 0,
-                legend: 'כמות',
-                legendOffset: -40,
-                legendPosition: 'center'
-            }}
-            pointSize={10}
-            pointColor={{ theme: 'background' }}
-            pointBorderWidth={2}
-            pointBorderColor={{ from: 'serieColor' }}
-            pointLabelYOffset={-12}
+            colors={['#00B4D8', 'red', '#00B4D8']}
             useMesh={true}
+            // axisLeft={{
+            //     legend: 'כמות'
+            // }}
+            // axisBottom={
+            //     {
+            //         legend: "זמן"
+            //     }
+            // }
             legends={[
                 {
                     anchor: 'bottom-right',

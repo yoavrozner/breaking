@@ -3,7 +3,7 @@ import Graph from './lineGraph.jsx';
 import Side from './components/Sidenav.jsx';
 import Navbar from 'react-bootstrap/Navbar'
 import Container from 'react-bootstrap/Container';
-import dataTwo from './dataTwo.json';
+import dataTwo from './data/dataTwo.json';
 
 function App() {
   return (
@@ -30,15 +30,15 @@ function App() {
       <div className='contentContainer'>
         <div className='card'>
           <div className='container'>
-            <h2><b>הבית של יואב רוזנר</b></h2>
+            <h2><b>בסיס אמן בנגב - משאיות</b></h2>
           </div>
 
           <div className='graphWrapper'>
             <Graph data={dataTwo} />
             <div className='desc'>
-              <img src={require('./home1.png')} alt="" className='imageSeal' />
+              <img src={require('./home1.webp')} alt="" className='imageSeal' />
               <h4>:תיאור האתר</h4>
-              <p>יואב חושד שעושים לו מסיבת הפתעה ורוצה לאשש את זה</p>
+              <p>הקמנים לא מאמינים שזה באמת קורה ולכן הם רצו למצוא כמה משאיות באמת עוברות שם בשגרה</p>
             </div>
           </div>
         </div>

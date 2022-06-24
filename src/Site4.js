@@ -3,7 +3,7 @@ import Graph from './lineGraph.jsx';
 import Side from './components/Sidenav.jsx';
 import Navbar from 'react-bootstrap/Navbar'
 import Container from 'react-bootstrap/Container';
-import dataFour from './dataFour.json';
+import dataFour from './data/dataFour.json';
 
 function App() {
   return (

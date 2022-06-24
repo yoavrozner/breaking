@@ -5,6 +5,8 @@
   "dependencies": {
     "@mui/icons-material": "^5.8.4",
     "@mui/material": "^5.8.4",
+    "@nivo/generators": "^0.79.0",
+    "@nivo/tooltip": "^0.79.0",
     "@progress/kendo-react-charts": "^5.4.0",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
@@ -13,6 +15,7 @@
     "canvasjs": "^1.8.3",
     "chart.js": "^3.8.0",
     "hammerjs": "^2.0.8",
+    "nivo": "^0.31.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.4.0",
     "react-chartkick": "^0.5.2",
